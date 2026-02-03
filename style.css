@@ -1,0 +1,35 @@
+.circle {
+    /* Set equal width and height */
+    width: 150px;
+    height: 150px;
+    /* Create the circle shape */
+    border-radius: 50%;
+    /* Ensure the image stays within the bounds */
+    overflow: hidden; 
+    /* Add a small margin for spacing */
+    margin: 10px;
+    /* Optional: add a shadow or border for style */
+    box-shadow: 0 4px 8px rgba(0,0,0,0.1);
+}
+
+.circle img {
+    /* Make the image fill the entire div */
+    width: 100%;
+    height: 100%;
+    /* Ensures the image covers the area and is centered within the circle */
+    object-fit: cover; 
+    /* The image naturally inherits the parent's border-radius, but you can explicitly add it */
+    border-radius: 50%;
+}
+
+.grid-container {
+    display:grid;
+    /* Defines 2 columns, each automatically sized to fit content */
+    grid-template-columns: auto auto; 
+    /* Optional: sets the gap between grid items */
+    gap: 20px; 
+    /* Optional: centers the grid on the page */
+    justify-content: center;
+    align-content: center;
+    padding: 20px;
+}
